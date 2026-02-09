@@ -1,6 +1,7 @@
 from google.adk.agents import Agent
 from google.adk.tools.agent_tool import AgentTool
 from google.adk.tools import google_search
+from pydantic import BaseModel, Field
 
 from time import time
 from datetime import datetime
