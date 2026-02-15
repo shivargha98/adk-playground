@@ -53,8 +53,8 @@ async def main():
         new_message=message
     ):
         #print(event)
-        if event.is_final_response():
-            if event.content and event.content.parts:
+        if event.is_final_response(): ##checks for the final response from agent, agent resp will have thinking,tool_calls etc ##
+            if event.content and event.content.parts: ## null check for content and its parts ##
                 print("Agent's final response:", event.content.parts[0].text)
 
 
